@@ -1,8 +1,13 @@
-- name: Instana Release
-  uses: taimos/github-action-instana-release@v3
-  with:
-  releaseName: 'version:1.0.0'
-
-  env:
-    INSTANA_BASE: ${{ secrets.INSTANA_BASE }}
-    INSTANA_TOKEN: ${{ secrets.INSTANA_TOKEN }}
+name: Instana Release
+run-name: ArgoCD, Instana Pipeline feedback
+on: [push]
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: taimos/github-action-instana-release@v3
+        with:
+          releaseName: 'version:1.0.0'
+        env:
+          INSTANA_BASE: ${{ secrets.INSTANA_BASE }}
+          INSTANA_TOKEN: ${{ secrets.INSTANA_TOKEN }}
