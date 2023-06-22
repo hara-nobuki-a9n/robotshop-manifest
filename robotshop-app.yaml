@@ -21,4 +21,4 @@ spec:
     helm:
       values: |
         image:
-          version: xxxx
+          version: v1.0.0
