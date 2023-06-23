@@ -3,7 +3,7 @@ run-name: ArgoCD, Instana Pipeline feedback
 on: 
   push:
     paths:
-      - '!.github/**'
+      - '.'
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest
