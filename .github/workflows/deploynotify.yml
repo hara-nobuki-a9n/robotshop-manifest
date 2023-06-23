@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: taimos/github-action-instana-release@v3
         with:
-          releaseName: 'catalogue version:1.1.0'
+          releaseName: 'catalogue version:1.0.0'
         env:
           INSTANA_BASE: ${{ secrets.INSTANA_BASE }}
           INSTANA_TOKEN: ${{ secrets.INSTANA_TOKEN }}
