@@ -14,6 +14,7 @@ spec:
       prune: true
       selfHeal: true
       allowEmpty: false
+  //hogehoge
   source:
     repoURL: https://github.com/hara-nobuki-a9n/robot-shop.git
     path: K8s/helm
