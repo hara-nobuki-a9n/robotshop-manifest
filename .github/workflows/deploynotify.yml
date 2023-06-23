@@ -1,6 +1,9 @@
 name: Instana Release
 run-name: ArgoCD, Instana Pipeline feedback
-on: [push]
+on: 
+  push:
+    paths:
+      - '!.github/**'
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest
